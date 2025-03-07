@@ -94,6 +94,8 @@ http://localhost:3000/cats?limit=5&page=2&sortBy=color:DESC&search=i&filter.age=
 }
 ```
 
+asdf
+
 ### Example (Cursor-based Pagination)
 
 The following code exposes a route using cursor-based pagination:
