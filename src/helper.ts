@@ -1,3 +1,4 @@
+import { mergeWith } from 'lodash'
 import {
     FindOperator,
     FindOptionsRelationByString,
@@ -7,7 +8,6 @@ import {
 } from 'typeorm'
 import { ColumnMetadata } from 'typeorm/metadata/ColumnMetadata'
 import { OrmUtils } from 'typeorm/util/OrmUtils'
-import { mergeWith } from 'lodash'
 
 /**
  * Joins 2 keys as `K`, `K.P`, `K.(P` or `K.P)`
@@ -200,7 +200,7 @@ export function checkIsJsonb(qb: SelectQueryBuilder<unknown>, propertyName: stri
     if (!qb || !propertyName) {
         return false
     }
-
+    // hello
     if (propertyName.includes('.')) {
         const parts = propertyName.split('.')
         const dbColumnName = parts[parts.length - 2]
