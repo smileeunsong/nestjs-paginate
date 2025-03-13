@@ -200,7 +200,7 @@ export function checkIsJsonb(qb: SelectQueryBuilder<unknown>, propertyName: stri
     if (!qb || !propertyName) {
         return false
     }
-    // hello  ddd
+    // hello  dddsdf
     if (propertyName.includes('.')) {
         const parts = propertyName.split('.')
         const dbColumnName = parts[parts.length - 2]
